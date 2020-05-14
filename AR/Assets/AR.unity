@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 748404768}
   - component: {fileID: 748404767}
   - component: {fileID: 748404766}
+  - component: {fileID: 748404770}
+  - component: {fileID: 748404769}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -182,6 +184,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &748404769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748404765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4088ae4cc8e69964392d3852d7b44a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragon: {fileID: 3778238323412896296, guid: b020855822361ce4594372210049f512, type: 3}
+--- !u!114 &748404770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748404765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1164126982
 GameObject:
   m_ObjectHideFlags: 0
