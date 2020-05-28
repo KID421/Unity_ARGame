@@ -13,6 +13,8 @@ public class TapToPlaceObject : MonoBehaviour
 
     public List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
+    private GameObject spawnDragon;
+
     private void Start()
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
@@ -20,7 +22,7 @@ public class TapToPlaceObject : MonoBehaviour
 
     private void PlaceObject()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !spawnDragon)
         {
             touchPosition = Input.mousePosition;
 
@@ -28,7 +30,7 @@ public class TapToPlaceObject : MonoBehaviour
             {
                 Pose hitPose = hits[0].pose;
 
-                GameObject spawnDragon = Instantiate(dragon, hitPose.position, Quaternion.identity);
+                spawnDragon = Instantiate(dragon, hitPose.position, Quaternion.identity);
                 Vector3 look = transform.position;
                 look.y = spawnDragon.transform.position.y;
                 spawnDragon.transform.LookAt(look);
